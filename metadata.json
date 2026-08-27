@@ -1,0 +1,6 @@
+{
+  "name": "Questions for Amit Sir",
+  "description": "Interactive cinematic slide presentation featuring Question slides, keyboard navigation, and visual career choice cards for Amit Sir.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questions for Amit Sir</title>
+    <meta name="description" content="Interactive Question Deck for Amit Sir with career choice cards and arrow navigation." />
+    <meta property="og:title" content="Questions for Amit Sir" />
+    <meta property="og:description" content="Interactive Question Deck for Amit Sir with career choice cards and arrow navigation." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      // Make window.fetch safely writable to avoid "Cannot set property fetch of #<Window> which has only a getter"
+      try {
+        let _fetch = typeof window !== 'undefined' && window.fetch ? window.fetch.bind(window) : undefined;
+        Object.defineProperty(window, 'fetch', {
+          get() {
+            return _fetch;
+          },
+          set(fn) {
+            _fetch = fn;
+          },
+          configurable: true,
+          enumerable: true
+        });
+      } catch (e) {
+        // Continue normally if already defined/unsupported
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
